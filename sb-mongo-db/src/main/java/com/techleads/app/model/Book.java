@@ -1,5 +1,7 @@
 package com.techleads.app.model;
 
+import java.util.List;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -16,5 +18,7 @@ public class Book {
 	private Integer id;
 	private String bookName;
 	private String authorName;
+	private List<String> subscribed;
+	private List<Post> posts;
 
 }
